@@ -1,5 +1,5 @@
 # FIREARMS-DATABASE-API-
-
+im doing this project to help the generall public better understand fireamrs and knoledge of firearms  and to keeep it as unbiased as possible and to give a breif history of each weapon 
 
 first i will identify the attributes of each data entity and diagram the relationships between them. Here’s a basic idea of my ERD:
 
