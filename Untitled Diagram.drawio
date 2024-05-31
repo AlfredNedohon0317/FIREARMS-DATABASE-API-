@@ -1,14 +1,23 @@
-<mxfile host="app.diagrams.net" modified="2024-05-30T21:06:59.088Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" etag="IrTI5P2LWmofEsuakoZG" version="24.4.0" type="github">
+<mxfile host="app.diagrams.net" modified="2024-05-31T13:22:38.055Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" etag="jx4K8bmRDHLeAm8avWxr" version="24.4.10" type="github">
   <diagram name="Page-1" id="8ZFsm65qlWQePbd2sA96">
-    <mxGraphModel dx="1364" dy="751" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1400" dy="1063" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="iysEGi0kYEkfGopbacEu-1" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+        <mxCell id="iysEGi0kYEkfGopbacEu-1" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
           <mxGeometry x="90" y="110" width="920" height="920" as="geometry" />
         </mxCell>
-        <mxCell id="iysEGi0kYEkfGopbacEu-2" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="90" y="110" width="920" height="100" as="geometry" />
+        <mxCell id="iysEGi0kYEkfGopbacEu-2" value="&lt;font size=&quot;3&quot;&gt;firearm data base&amp;nbsp;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="90" y="100" width="920" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="eB1i-hGsZ7XF75oEXZ-Y-1" value="firearm photo&amp;nbsp;" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="130" y="250" width="260" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="eB1i-hGsZ7XF75oEXZ-Y-3" value="breif history&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="540" width="860" height="440" as="geometry" />
+        </mxCell>
+        <mxCell id="eB1i-hGsZ7XF75oEXZ-Y-4" value="fire arm info : weight, length, caliber, rof, type of ffl required&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="460" y="250" width="500" height="260" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
