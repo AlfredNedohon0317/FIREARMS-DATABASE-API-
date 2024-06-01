@@ -6,12 +6,10 @@ first i will identify the attributes of each data entity and diagram the relatio
 Firearm
 
 Attributes: name, weight, size, caliber, rate_of_fire, history, type, ffl_required, state legality
-Relationships: 1
-with Review, 1
 with Manufacturer
 Review
 
-Attributes: firearm_id, user_id, rating, comment
+Attributes: firearm_id, user_id, rating, 
 Relationships: M:1 with Firearm, M:1 with User
 Manufacturer
 
@@ -21,7 +19,6 @@ with Firearm
 User
 
 Attributes: username, email, password
-Relationships: M:1 with Review
 Step 3: Wireframe Designs
 You can use tools like Figma, Sketch, or even pen and paper to create wireframes for your front end. Here are some suggestions for your wireframes:
 
@@ -46,23 +43,4 @@ Implement user authentication (sign up, login).
 Create pages for listing, adding, editing, and deleting firearms.
 Basic styling for the UI.
 Stretch Goals:
-
-Add manufacturer management (CRUD for manufacturers).
-Implement user reviews for firearms.
-Implement advanced search and filter functionalities.
-Step 6: Trello Board (Optional)
-Create a Trello board to manage your tasks and daily goals. Columns could include: Backlog, In Progress, Testing, Done.
-
-Step 7: Project Presentation
-Introduction: Summarize your README, describing the purpose and functionality of your app.
-Demonstration: Show your app's main features, focusing on data operations and user interactions.
-Code Discussion: Highlight your Mongoose models and front-end Axios functionality.
-Experience Sharing: Discuss challenges faced and key learnings.
-Technical Stack:
-Back End: Node.js, Express, MongoDB, Mongoose
-Front End: HTML, CSS, JavaScript (DOM manipulation)
-Version Control: Git (with daily commits)
-Getting Started:
-Discuss your app idea with an instructor.
-Prioritize user stories and start with the MVP.
-Keep your focus narrow to avoid feature creep.
+greatest obsticles :
