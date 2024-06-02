@@ -1,0 +1,30 @@
+{
+  "name": "project2",
+  "version": "1.0.0",
+  "description": "im doing this project to help the generall public better understand fireamrs and knoledge of firearms  and to keeep it as unbiased as possible and to give a breif history of each weapon",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlfredNedohon0317/FIREARMS-DATABASE-API-.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlfredNedohon0317/FIREARMS-DATABASE-API-/issues"
+  },
+  "homepage": "https://github.com/AlfredNedohon0317/FIREARMS-DATABASE-API-#readme",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.4.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.2"
+  }
+}
