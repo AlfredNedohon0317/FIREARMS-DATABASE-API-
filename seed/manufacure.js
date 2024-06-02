@@ -3,14 +3,16 @@ const Manufacturer = require('../models/manufacturer');
 
 const manufacturers = [
   {
-    name: 'Example Manufacturer 1',
+    name: 'Colt Manufacting Comapny',
     country: 'USA',
-    founded: '1950',
+    state: 'CT',
+    founded: '1855',
+
   },
   {
-    name: 'Example Manufacturer 2',
+    name: 'Heckler & Koch (H&K)',
     country: 'Germany',
-    founded: '1930',
+    founded: '1949',
   },
  
 ];

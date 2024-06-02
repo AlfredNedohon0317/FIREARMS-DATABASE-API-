@@ -4,7 +4,9 @@
   "description": "im doing this project to help the generall public better understand fireamrs and knoledge of firearms  and to keeep it as unbiased as possible and to give a breif history of each weapon",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon server.js"
   },
   "repository": {
     "type": "git",
