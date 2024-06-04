@@ -470,7 +470,7 @@ const firearms = [
     Image: '',
   },
   {
-    name:'M14',
+    name:'M-14',
     caliber:'7.62x51mm',
     manufacturerId: '',
     historyId: '',
@@ -486,7 +486,7 @@ const firearms = [
     Image: '',
   },
   {
-    name:'CZ75',
+    name:'CZ-75',
     caliber:'9x19mm Parabellum',
     manufacturerId: '',
     historyId: '',

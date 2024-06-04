@@ -34,3 +34,44 @@ Getting Started
 ~Install the necessary dependencies using npm install.
 ~Start the server using npm start.
 ~Access the application via http://localhost:3000 in your web browser.
+
+
+
+
+
+
+
+for each of these firearm objects please define the const based on the following example:
+example const Model614 = await Firearm.find({name: 'Model 614'}) 
+{
+    name:'Model 614',
+    caliber:'5.56x45mm',
+    manufacturerId: '',
+    historyId: '',
+    fflType: '',
+    Image: '',
+  },
+  {
+    name:'Model 921',
+    caliber:'5.56x45mm',
+    manufacturerId: '',
+    historyId: '',
+    fflType: '',
+    Image: '',
+  },
+  {
+    name:'Python',
+    caliber:'.357 Magnum',
+    manufacturerId: '',
+    historyId: '',
+    fflType: '',
+    Image: '',
+  },
+  {
+    name:'Single Action Army',
+    caliber:'.45 Long Colt',
+    manufacturerId: '',
+    historyId: '',
+    fflType: '',
+    Image: '',
+  },
