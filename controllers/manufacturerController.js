@@ -1,9 +1,7 @@
 const Manufacturer = require('../models/manufacturer');
 
 
-
-
- const getAllManufacturers = async (req, res) => {
+const getAllManufacturers = async (req, res) => {
   try {
     const manufacturers = await Manufacturer.find();
     res.json(manufacturers);

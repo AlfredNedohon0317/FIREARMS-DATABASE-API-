@@ -1,8 +1,16 @@
 const db = require('../DB'); 
-const Manufacturer = require('../models/manufacturer');
-
-
-
+db.on('error', console.error.bind(console, 'MongoDB connection error:'))
+const {Manufacturer} = require('../models');
+const resetCollections = async () => {
+  try {
+      await Manufacturer.deleteMany({});
+      console.log('All collection reset');
+  } catch (error) {
+      console.error('Error resetting collections:', error);
+  }
+};
+const main= async() =>{
+  await resetCollections();
 const manufacturers = [
   {
     name: 'Colt Manufacting Comapny',
@@ -110,19 +118,12 @@ const manufacturers = [
 
  
 ];
-
-
-const seedManufacturers = async () => {
-  try {
-    await Manufacturer.insertMany(manufacturers);
-    console.log('Manufacturers seeded successfully');
-  } catch (error) {
-    console.error('Error seeding manufacturers:', error.message);
-  }
-};
-
-module.exports = seedManufacturers;
-function main() {
-  
+await Manufacturer.insertMany(manufacturers)
+console.log("cap and ball")
 }
-main();
+
+const run = async () => {
+  await main ()
+  db.close
+}
+  run();
