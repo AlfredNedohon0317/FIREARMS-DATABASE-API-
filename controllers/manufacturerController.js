@@ -1,4 +1,4 @@
-const Manufacturer = require('../models/manufacturer');
+const {Manufacturer} = require('../models');
 
 
 const getAllManufacturers = async (req, res) => {

@@ -1,4 +1,4 @@
-const Firearm = require('../models/firearm');
+const {Firearm} = require('../models');
 
 
 const getAllFirearms = async (req, res) => {

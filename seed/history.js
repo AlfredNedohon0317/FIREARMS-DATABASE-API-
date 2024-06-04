@@ -11,9 +11,11 @@ const resetCollections = async () => {
 };
 const main = async() => {
   await resetCollections();
+  const Model1911 = await Firearm.find({name: 'Model 1911'})
+  const = await Firearm.find({name: ''})
 const history = [
   {
-    firearmId: '', 
+    firearmId: Model1911[0]._id, 
     content: '',
     date: '2022-01-01',
   },
