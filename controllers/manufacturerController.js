@@ -3,7 +3,7 @@ const Manufacturer = require('../models/manufacturer');
 
 
 
-exports.getAllManufacturers = async (req, res) => {
+ const getAllManufacturers = async (req, res) => {
   try {
     const manufacturers = await Manufacturer.find();
     res.json(manufacturers);
@@ -13,7 +13,7 @@ exports.getAllManufacturers = async (req, res) => {
 };
 
 
-exports.getManufacturerById = async (req, res) => {
+ const getManufacturerById = async (req, res) => {
   try {
     const manufacturer = await Manufacturer.findById(req.params.id);
     if (!manufacturer) {
@@ -26,7 +26,7 @@ exports.getManufacturerById = async (req, res) => {
 };
 
 
-exports.createManufacturer = async (req, res) => {
+ const createManufacturer = async (req, res) => {
   const manufacturer = new Manufacturer({
     name: req.body.name,
     country: req.body.country,
@@ -42,7 +42,7 @@ exports.createManufacturer = async (req, res) => {
 };
 
 
-exports.updateManufacturer = async (req, res) => {
+ const updateManufacturer = async (req, res) => {
   try {
     const manufacturer = await Manufacturer.findById(req.params.id);
     if (!manufacturer) {
@@ -61,7 +61,7 @@ exports.updateManufacturer = async (req, res) => {
 };
 
 
-exports.deleteManufacturer = async (req, res) => {
+ const deleteManufacturer = async (req, res) => {
   try {
     const manufacturer = await Manufacturer.findById(req.params.id);
     if (!manufacturer) {
@@ -73,3 +73,10 @@ exports.deleteManufacturer = async (req, res) => {
     res.status(500).json({ message: error.message });
   }
 };
+module.exports={
+  getAllManufacturers,
+  getManufacturerById,
+  createManufacturer, 
+  updateManufacturer,
+  deleteManufacturer,
+}

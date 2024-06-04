@@ -1,5 +1,6 @@
 const express = require('express');
-const router = express.Router();
+const router = express.Router(); //This line imports the Express module, 
+//which is a web application framework for Node.js. Express simplifies the process of handling HTTP requests, building APIs, and managing web servers.
 const firearmController = require('../controllers/firearmController');
 
 

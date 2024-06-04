@@ -11,7 +11,95 @@ const history = [
     content: '',
     date: '2022-02-01',
   },
- 
+
+  {
+    firearmId: '', 
+    content: '',
+    date: '2022-02-01',
+  },
+
+  {
+    firearmId: '', 
+    content: '',
+    date: '2022-02-01',
+  },
+
+  {
+    firearmId: '', 
+    content: '',
+    date: '2022-02-01',
+  },
+  {
+    firearmId: '', 
+    content: '',
+    date: '2022-02-01',
+  },
+
+  {
+    firearmId: '', 
+    content: '',
+    date: '2022-02-01',
+  },
+
+  {
+    firearmId: '', 
+    content: '',
+    date: '2022-02-01',
+  },
+
+  {
+    firearmId: '', 
+    content: '',
+    date: '2022-02-01',
+  },
+
+  {
+    firearmId: '', 
+    content: '',
+    date: '2022-02-01',
+  },
+
+  {
+    firearmId: '', 
+    content: '',
+    date: '2022-02-01',
+  },
+
+  {
+    firearmId: '', 
+    content: '',
+    date: '2022-02-01',
+  },
+
+  {
+    firearmId: '', 
+    content: '',
+    date: '2022-02-01',
+  },
+
+  {
+    firearmId: '', 
+    content: '',
+    date: '2022-02-01',
+  },
+
+  {
+    firearmId: '', 
+    content: '',
+    date: '2022-02-01',
+  },
+  {
+    firearmId: '', 
+    content: '',
+    date: '2022-02-01',
+  },
+
+  {
+    firearmId: '', 
+    content: '',
+    date: '2022-02-01',
+  },
+
 ];
 
 

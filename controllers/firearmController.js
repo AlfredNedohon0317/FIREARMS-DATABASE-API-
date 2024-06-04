@@ -1,9 +1,7 @@
 const Firearm = require('../models/firearm');
 
 
-
-
-exports.getAllFirearms = async (req, res) => {
+const getAllFirearms = async (req, res) => {
   try {
     const firearms = await Firearm.find();
     res.json(firearms);
@@ -13,7 +11,7 @@ exports.getAllFirearms = async (req, res) => {
 };
 
 
-exports.getFirearmById = async (req, res) => {
+const getFirearmById = async (req, res) => {
   try {
     const firearm = await Firearm.findById(req.params.id);
     if (!firearm) {
@@ -26,7 +24,7 @@ exports.getFirearmById = async (req, res) => {
 };
 
 
-exports.createFirearm = async (req, res) => {
+const createFirearm = async (req, res) => {
   const firearm = new Firearm({
     name: req.body.name,
     caliber: req.body.caliber,
@@ -42,7 +40,7 @@ exports.createFirearm = async (req, res) => {
   }
 };
 
-exports.updateFirearm = async (req, res) => {
+const updateFirearm = async (req, res) => {
   try {
     const firearm = await Firearm.findById(req.params.id);
     if (!firearm) {
@@ -62,7 +60,7 @@ exports.updateFirearm = async (req, res) => {
 };
 
 
-exports.deleteFirearm = async (req, res) => {
+const deleteFirearm = async (req, res) => {
   try {
     const firearm = await Firearm.findById(req.params.id);
     if (!firearm) {
@@ -74,3 +72,13 @@ exports.deleteFirearm = async (req, res) => {
     res.status(500).json({ message: error.message });
   }
 };
+
+
+module.exports={ 
+  getAllFirearms,
+  getFirearmById,
+  createFirearm,
+  updateFirearm,
+  deleteFirearm,
+}
+

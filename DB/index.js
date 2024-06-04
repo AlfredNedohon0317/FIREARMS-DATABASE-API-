@@ -1,19 +1,12 @@
-const mongoose = require('mongoose');
-
-
-mongoose.connect('mongodb://localhost/firearmpedia', {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-})
-.then(() => {
-  console.log('Connected to MongoDB');
-})
-.catch((error) => {
-  console.error('Error connecting to MongoDB:', error.message);
-});
-
-module.exports = {
-  Firearm: require('./models/firearm'),
-  Manufacturer: require('./models/manufacturer'),
-  History: require('./models/history'),
-};
+const mongoose = require('mongoose')
+mongoose
+    .connect('mongodb://127.0.0.1:27017/FirearmDatabaseAPI')
+    .then(() => {
+        console.log('Successfully connected to MongoDB.')
+    })
+    .catch(e => {
+        console.error('Connection error', e.message)
+    })
+mongoose.set(`debug`, true)
+const db = mongoose.connection
+module.exports = db

@@ -3,7 +3,7 @@ const History = require('../models/history');
 
 
 
-exports.getAllHistory = async (req, res) => {
+const getAllHistory = async (req, res) => {
   try {
     const history = await History.find();
     res.json(history);
@@ -13,7 +13,7 @@ exports.getAllHistory = async (req, res) => {
 };
 
 
-exports.getHistoryById = async (req, res) => {
+const getHistoryById = async (req, res) => {
   try {
     const history = await History.findById(req.params.id);
     if (!history) {
@@ -26,7 +26,7 @@ exports.getHistoryById = async (req, res) => {
 };
 
 
-exports.createHistory = async (req, res) => {
+const createHistory = async (req, res) => {
   const history = new History({
     firearmId: req.body.firearmId,
     content: req.body.content,
@@ -42,7 +42,7 @@ exports.createHistory = async (req, res) => {
 };
 
 
-exports.updateHistory = async (req, res) => {
+const updateHistory = async (req, res) => {
   try {
     const history = await History.findById(req.params.id);
     if (!history) {
@@ -61,7 +61,7 @@ exports.updateHistory = async (req, res) => {
 };
 
 
-exports.deleteHistory = async (req, res) => {
+const deleteHistory = async (req, res) => {
   try {
     const history = await History.findById(req.params.id);
     if (!history) {
@@ -73,3 +73,13 @@ exports.deleteHistory = async (req, res) => {
     res.status(500).json({ message: error.message });
   }
 };
+
+
+
+module.exports={
+  getAllHistory,
+  getHistoryById,
+  createHistory, 
+  updateHistory,
+  deleteHistory,
+}

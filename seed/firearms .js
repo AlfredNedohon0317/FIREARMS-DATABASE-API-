@@ -7,16 +7,27 @@ const firearms = [
     caliber: '.45 acp',
     manufacturerId: '', 
     historyId: '',
-    fflType 
+    fflType:'none', 
+    Image:'',
   },
   {
-    name: 'colt m16 ',
+    name: 'colt model 614 (m16a1) ',
     caliber: '5.56mm',
     manufacturerId: '', 
     historyId: '', 
-    fflType
+    fflType: 'class 3 ',
+    Image:'',
   },
  
+  {
+    name: ' ',
+    caliber: '',
+    manufacturerId: '', 
+    historyId: '', 
+    fflType: ' ',
+    Image:'',
+  },
+
 ];
 
 
