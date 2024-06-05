@@ -1,6 +1,6 @@
 
 // const { default: mongoose } = require("mongoose");
-const db = require("../DB");
+const db = require("../db");
 db.on("error", console.error.bind(console, "mondgodb connection error"))
 const {Firearm,Manufacturer} = require("../models");
 const resetCollections = async () => {

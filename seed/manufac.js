@@ -1,4 +1,4 @@
-const db = require('../DB'); 
+const db = require('../db'); 
 db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 const {Manufacturer} = require('../models');
 const resetCollections = async () => {
@@ -135,6 +135,6 @@ console.log("cap and ball")
 
 const run = async () => {
   await main ()
-  db.close
+  db.close()
 }
   run();

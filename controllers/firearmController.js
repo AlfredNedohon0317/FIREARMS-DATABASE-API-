@@ -1,5 +1,7 @@
 const {Firearm} = require('../models');
+const db = require('./db')
 
+db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 
 const getAllFirearms = async (req, res) => {
   try {

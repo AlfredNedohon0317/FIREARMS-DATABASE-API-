@@ -1,6 +1,5 @@
-//const mongoose = require('mongoose');
 const { Schema } = require('mongoose');
-// const { Manufacturer } = require('.');
+
 
 const manufacturerSchema = new Schema({
   name: { type: String, required: true },
@@ -10,8 +9,4 @@ const manufacturerSchema = new Schema({
 {timestamps: true}
 );
 
-
-
-
-// module.exports = mongoose.model('Manufacturer', manufacturerSchema);
 module.exports = manufacturerSchema;

@@ -1,6 +1,6 @@
 
 const {Schema}= require('mongoose')
-// const mongoose = require('mongoose');
+
 
 const firearmSchema = new Schema({
   name: { type: String, required: true },
@@ -15,4 +15,3 @@ const firearmSchema = new Schema({
 
 
 module.exports = firearmSchema
-// module.exports = mongoose.model('Firearm', firearmSchema);
