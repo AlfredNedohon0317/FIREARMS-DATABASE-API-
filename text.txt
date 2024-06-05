@@ -43,3 +43,15 @@ allowed, pistol permit and background check required
 allowed, must pass background check as wel as some states have a permit to purchase long gun
 
 
+
+
+
+
+
+
+for (const firearmObject of firearmObjectArray) {
+}
+
+
+
+const manufObject = manufacturerObjectArray.find(obj => obj._id.toString() === firearmObject.manufacturerId);

@@ -15,7 +15,6 @@ const resetCollections = async () => {
 const main = async() => {
   await resetCollections();
   const Colt = await Manufacturer.find({name: "Colt Manufacting Company"})
-console.log(Colt)
   const HK = await Manufacturer.find({name: "Heckler & Koch (H&K)" })
   const Benelli  = await Manufacturer.find({name: "Benelli" })
   const Beretta  = await Manufacturer.find({name: "Beretta" })
@@ -34,7 +33,7 @@ console.log(Colt)
   const  SW = await Manufacturer.find({name: "Smith & Wesson" })
   const  Glock = await Manufacturer.find({name: "Glock" })
   const  Ruger = await Manufacturer.find({name: "Ruger" })
-  console.log(Colt)
+
   const data=await Manufacturer.find({})
   console.log(data)
 
@@ -64,7 +63,7 @@ console.log(Colt)
       Image: "https://www.imfdb.org/images/thumb/c/c2/ColtModel610-XM177.jpg/500px-ColtModel610-XM177.jpg",
     },
     {
-      name: "Python",
+      name: "Colt Python",
       caliber: ".357 Magnum",
       manufacturerId: `${Colt[0]._id}`,
       history: "Introduced in 1955, the Colt Python is renowned for its accuracy, smooth trigger pull, and tight cylinder lock-up, becoming one of the most iconic revolvers in history.",
@@ -133,7 +132,7 @@ console.log(Colt)
       manufacturerId: `${Glock[0]._id}`,
       history: "Debuted in 1990, the Glock 23 was designed to accommodate the .40 S&W cartridge. It shares similarities with the Glock 19 but features a heavier slide and larger barrel hole.",
       Ownership: "allowed, pistol permit and background check required.",
-      Image: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fnationalinterest.org%2Fblog%2Fbuzz%2Fwhy-fbi-and-police-prefer-glock-23-glock-19-166484&psig=AOvVaw2jorStNrVXBJYT538JoL3H&ust=1717615025073000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCLDisd_UwoYDFQAAAAAdAAAAABAD",
+      Image: "https://reddotarms.com/media/catalog/product/cache/206efacabdceaba0db767a19be306827/p/i/pi1950203.jpg",
     },
     {
       name: "Super Blackhawk",
@@ -165,7 +164,7 @@ console.log(Colt)
       manufacturerId: `${HK[0]._id}`,
       history: "Developed in the 1950s by Heckler & Koch, the G3 was designed to supply the West German military with a new rifle after World War II. It was based on earlier developments such as the Spanish CETME Model 58.",
       Ownership: "allowed, but will require a sot class 3 tax stamp, or FFL type 7 with an sot class 2,3.",
-      Image: "",
+      Image: "https://gundigest.com/wp-content/uploads/Early-HK-G3-RIA.jpg",
     },
     {
       name: "HK53",
@@ -197,7 +196,7 @@ console.log(Colt)
       manufacturerId: `${HK[0]._id}`,
       history: "The Heckler & Koch UMP9 is a submachine gun developed by Heckler & Koch in the late 1990s. It was designed to offer a lighter and more affordable alternative to the MP5, utilizing modern polymers and a simple blowback operation. The UMP9 is chambered in 9x19mm Parabellum ammunition, making it suitable for close-quarters combat and law enforcement applications. Despite its relatively recent introduction, the UMP9 has gained popularity among military and law enforcement units worldwide for its reliability and compact design.",
       Ownership: "allowed, but will require a sot class 3 tax stamp, or FFL type 7 with an sot class 2,3.",
-      image:"https://www.jamesbondlifestyle.com/sites/default/files/styles/full_width_image/public/images/product/ga031-heckler-koch-ump9-large.jpg?itok=m3z9p72u",
+      Image:"https://www.jamesbondlifestyle.com/sites/default/files/styles/full_width_image/public/images/product/ga031-heckler-koch-ump9-large.jpg?itok=m3z9p72u",
     },
 {
     name: "UMP45",
@@ -373,7 +372,7 @@ console.log(Colt)
   manufacturerId: `${SIG[0]._id}`,
   history: "The SIG SG-552 is a compact carbine version of the SG 550 series, popular with special forces and police units.",
   Ownership: "allowed, must pass background check as wel as some states have a permit to purchase long guns, furthermore some states have restrictions on them ie banning certain features on them ",
-  Image: "https://static.wikia.nocookie.net/tuckerverse/images/2/2f/SIG_SG_552.jpg/revision/latest?cb=20150519155418",
+  Image: "https://lh3.googleusercontent.com/proxy/__rgfML3ihyRMBe3AuoqqeKqdza-VIwuTrZjqZVPt3p9M449N056C4dU7huXqcfmQMG4niGamg_Mk--d-3Uz1zHpBZye_vsUuRLd70DeRUDQaSm0ZsbXBB9rIxiyHwp69-EfJhg1u2pn9tALNmPZPDJzOOV7KnRbUBLm5N-7YDK-zKryc-5cuzB-MQAC_m4od0F0RFwF4HzEV9J79bHRvKnH4J65JijYSNnkfXMk8hjYwjH4ddxN0HNUu0XsM-K06V0oiZxH_FYwimEvdrQX9PMd5gVPgtzXlgFT1L5m0S810-0",
 },
 {
   name: "Kar 98k",
@@ -565,7 +564,7 @@ console.log(Colt)
   manufacturerId: `${Kalashnikov[0]._id}`,
   history: "The AKM is a modernized version of the AK-47, featuring stamped metal parts for easier production and improved performance.",
   Ownership: "allowed, but will require a sot class 3 tax stamp, or FFL type 7 with an sot class 2,3.",
-  Image: "https://static.wikia.nocookie.net/terranalliance/images/a/a7/AKM.jpg/revision/latest?cb=20221021085054",
+  Image: "https://t3.ftcdn.net/jpg/01/07/07/30/360_F_107073014_Cq69ssuR0FPTPIOju0j8QhVVPSiKX2YZ.jpg",
 },
 {
   name: "AKM-74",
@@ -573,7 +572,7 @@ console.log(Colt)
   manufacturerId: `${Kalashnikov[0]._id}`,
   history: "The AKM-74 is a variant of the AKM chambered for the smaller 5.45x39mm cartridge, adopted by the Soviet military in the 1970s.",
   Ownership: "allowed, but will require a sot class 3 tax stamp, or FFL type 7 with an sot class 2,3.",
-  Image: "https://img.kalashnikovgroup.ru/2120,fit/https://cdn.kalashnikovgroup.ru/static/images/a/k/7/ak74m-d019134-3kh2-13363-1080.jpg",
+  Image: "https://armsco.fr/files/bibliotheque/photos-produits/SA100-1.jpg?v=2021-09-02%2012%3A16%3A09",
 },
 {
   name: "PP-19 Vityaz",

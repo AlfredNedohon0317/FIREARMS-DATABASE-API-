@@ -3,14 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Firearms Database</title>
-  <script src="scripts.js"></script>
-  
-  <link rel="stylesheet" href="styles.css">
+  <title>Chungie's Firearms Database</title>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script defer src="script.js"></script>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>list of Firearms </h1>
-  <ul id="firearms-list"></ul>
-
+  <header>
+    <h1>Chungie's Firearms Database</h1>
+  </header>
+  <main>
+    <section id="search">
+      <h2>Search Firearms</h2>
+      <input type="text" id="searchInput" placeholder="Enter firearm name or model">
+      <button id="searchButton">Search</button>
+    </section>
+    <section id="results">
+      <h2>Results</h2>
+      <ul id="firearms-list"></ul>
+    </section>
+  </main> 
 </body>
 </html>

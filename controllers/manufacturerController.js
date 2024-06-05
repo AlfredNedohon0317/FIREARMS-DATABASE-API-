@@ -1,8 +1,5 @@
 const {Manufacturer} = require('../models');
 const db = require('../db');
-
-
-
 db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 
 const getAllManufacturers = async (req, res) => {

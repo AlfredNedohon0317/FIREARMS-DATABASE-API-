@@ -9,4 +9,4 @@ const manufacturerSchema = new Schema({
 {timestamps: true}
 );
 
-module.exports = manufacturerSchema;
+module.exports = manufacturerSchema; 

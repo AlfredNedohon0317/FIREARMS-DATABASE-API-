@@ -14,4 +14,6 @@ const firearmSchema = new Schema({
 );
 
 
+
 module.exports = firearmSchema
+ 

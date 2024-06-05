@@ -1,17 +1,24 @@
-const {Firearm} = require('../models');
-const db = require('./db')
-
+const { Firearm } = require('../models');
+const db = require('../db');
 db.on('error', console.error.bind(console, 'MongoDB connection error:'))
+
 
 const getAllFirearms = async (req, res) => {
   try {
-    const firearms = await Firearm.find();
+    const searchTerm = req.query.name;
+    let firearms;
+    
+    if (searchTerm) {
+      firearms = await Firearm.find({ name: new RegExp(searchTerm, 'i') }); // case-insensitive search
+    } else {
+      firearms = await Firearm.find();
+    }
+
     res.json(firearms);
   } catch (error) {
     res.status(500).json({ message: error.message });
   }
 };
-
 
 const getFirearmById = async (req, res) => {
   try {
@@ -25,13 +32,13 @@ const getFirearmById = async (req, res) => {
   }
 };
 
-
 const createFirearm = async (req, res) => {
   const firearm = new Firearm({
     name: req.body.name,
     caliber: req.body.caliber,
     manufacturerId: req.body.manufacturerId,
-    historyId: req.body.historyId,
+    history: req.body.history,
+    image: req.body.image
   });
 
   try {
@@ -52,7 +59,8 @@ const updateFirearm = async (req, res) => {
     firearm.name = req.body.name;
     firearm.caliber = req.body.caliber;
     firearm.manufacturerId = req.body.manufacturerId;
-    firearm.historyId = req.body.historyId;
+    firearm.history = req.body.history;
+    firearm.image = req.body.image;
 
     const updatedFirearm = await firearm.save();
     res.json(updatedFirearm);
@@ -60,7 +68,6 @@ const updateFirearm = async (req, res) => {
     res.status(400).json({ message: error.message });
   }
 };
-
 
 const deleteFirearm = async (req, res) => {
   try {
@@ -75,12 +82,10 @@ const deleteFirearm = async (req, res) => {
   }
 };
 
-
-module.exports={ 
+module.exports = { 
   getAllFirearms,
   getFirearmById,
   createFirearm,
   updateFirearm,
   deleteFirearm,
-}
-
+};
