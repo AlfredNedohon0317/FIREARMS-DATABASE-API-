@@ -41,6 +41,7 @@ const main = async() => {
     {
       name: "Model 1911",
       caliber: ".45 ACP",
+      Manufacturer:"",
       manufacturerId: `${Colt[0]._id}`,
       history: "The Model 1911 served as the standard-issue sidearm for the United States Armed Forces from 1911 to 1985, seeing action in multiple conflicts including World War I, World War II, the Korean War, and the Vietnam War.",
       Ownership: "allowed, with pistol permit.",
