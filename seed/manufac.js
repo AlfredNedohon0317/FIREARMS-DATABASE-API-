@@ -13,7 +13,7 @@ const main= async() =>{
   await resetCollections();
 const manufacturers = [
   {
-    name: 'Colt Manufacting Comapny',
+    name: 'Colt Manufacting Company',
     country: 'USA, Conneticut',
     founded: '1855',
 
@@ -61,7 +61,7 @@ const manufacturers = [
   },
 
   {
-    name: 'remington',
+    name: 'Remington',
     country: 'USA, North Carolina',
     founded: '1816',
   },
@@ -97,7 +97,7 @@ const manufacturers = [
   },
 
   {
-    name: 'Knight Armament Company (KAC) ',
+    name: 'Knight Armament Company (KAC)',
     country: 'USA, Florida',
     founded: '1982',
   },
@@ -110,12 +110,23 @@ const manufacturers = [
   },
 
   {
-    name: 'Smith & Wesson ',
+    name: 'Smith & Wesson',
     country: 'USA, Conneticut',
     founded: '1852',
   },
 
 
+  {
+    name: 'Ruger',
+    country: 'USA, Conneticut',
+    founded: '1949',
+  },
+
+  {
+    name: 'Glock',
+    country: 'Austria, Deutsch-Wagram',
+    founded: '1982',
+  },
  
 ];
 await Manufacturer.insertMany(manufacturers)

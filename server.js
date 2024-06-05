@@ -2,7 +2,7 @@ const express = require('express');
 // const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const logger = require('morgan');
-
+const cors = require('cors')
 
 const manufacturerController = require('./controllers/manufacturerController'); 
 const firearmController = require('./controllers/firearmController'); 
@@ -17,7 +17,6 @@ app.use(bodyParser.json());
 app.use(logger('dev'));
 app.use(express.json());
 app.use(cors());
-
 
 app.get('/', (req, res) => {
     res.send('Welcome to the Firearm Database');

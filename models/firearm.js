@@ -1,14 +1,14 @@
 
 const {Schema}= require('mongoose')
-//const mongoose = require('mongoose');
+// const mongoose = require('mongoose');
 
-const firearmSchema = new mongoose.Schema({
+const firearmSchema = new Schema({
   name: { type: String, required: true },
   caliber: { type: String, required: true },
-  manufacturerId: { type: mongoose.Schema.Types.ObjectId, ref: 'Manufacturer', required: true },
-  //historyId: { type: mongoose.Schema.Types.ObjectId, ref: 'History' },
-  fflType: { type: String, required: true },
-  Image: {type:String,required:true}
+  manufacturerId: { type: Schema.Types.ObjectId, ref: 'Manufacturer', required: true },
+  history: { type: String, required: false },
+  Ownership: { type: String, required: false },
+  Image: {type:String,required:false}
 },
 {timestamps:true }
 );
