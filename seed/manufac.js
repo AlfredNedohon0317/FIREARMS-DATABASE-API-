@@ -13,117 +13,117 @@ const main= async() =>{
   await resetCollections();
 const manufacturers = [
   {
-    name: 'Colt Manufacting Company',
+    Name: 'Colt Manufacting Company',
     country: 'USA, Conneticut',
     founded: '1855',
 
   },
   {
-    name: 'Heckler & Koch (H&K)',
+    Name: 'Heckler & Koch (H&K)',
     country: 'Germany, Oberndorf',
     founded: '1949',
   },
 
   {
-    name: 'Benelli',
+    Name: 'Benelli',
     country: 'italy, urbino',
     founded: '1967',
   },
 
   {
-    name: 'Beretta',
+    Name: 'Beretta',
     country: 'italy, Gardone Val Trompia',
     founded: '1949',
   },
 
   {
-    name: 'FN Herstal',
+    Name: 'FN Herstal',
     country: 'belgium, Herstal',
     founded: '1889',
   },
 
   {
-    name: 'Browning Arms Company',
+    Name: 'Browning Arms Company',
     country: 'USA, Utah',
     founded: '1880',
   },
 
   {
-    name: 'Sig Sauer',
+    Name: 'Sig Sauer',
     country: 'Switzerland, Neuhausen am Rheinfall',
     founded: '1853',
   },
 
   {
-    name: 'Mauser',
+    Name: 'Mauser',
     country: 'Germany, Oberndorf',
     founded: '1874',
   },
 
   {
-    name: 'Remington',
+    Name: 'Remington',
     country: 'USA, North Carolina',
     founded: '1816',
   },
 
   {
-    name: 'Česká zbrojovka Uherský Brod (CZ)',
+    Name: 'Česká zbrojovka Uherský Brod (CZ)',
     country: 'Czechia, Uhersky Brod',
     founded: '1936',
   },
 
   {
-    name: 'Walther',
+    Name: 'Walther',
     country: 'Germany, Zella-mehlis',
     founded: '1886',
   },
 
   {
-    name: 'Winchester',
+    Name: 'Winchester',
     country: 'USA, Conneticut',
     founded: '1931',
   },
 
   {
-    name: 'Springfield Armory',
+    Name: 'Springfield Armory',
     country: 'USA, Illinois',
     founded: '1794',
   },
 
   {
-    name: 'Armalite',
+    Name: 'Armalite',
     country: 'USA, CA',
     founded: '1954',
   },
 
   {
-    name: 'Knight Armament Company (KAC)',
+    Name: 'Knight Armament Company (KAC)',
     country: 'USA, Florida',
     founded: '1982',
   },
 
 
   {
-    name: 'Kalashnikov Concern (Izh)',
+    Name: 'Kalashnikov Concern (Izh)',
     country: 'Russia, Moscow',
     founded: '1807',
   },
 
   {
-    name: 'Smith & Wesson',
+    Name: 'Smith & Wesson',
     country: 'USA, Conneticut',
     founded: '1852',
   },
 
 
   {
-    name: 'Ruger',
+    Name: 'Ruger',
     country: 'USA, Conneticut',
     founded: '1949',
   },
 
   {
-    name: 'Glock',
+    Name: 'Glock',
     country: 'Austria, Deutsch-Wagram',
     founded: '1982',
   },

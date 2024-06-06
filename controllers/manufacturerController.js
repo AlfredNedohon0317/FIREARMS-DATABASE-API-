@@ -27,7 +27,7 @@ const getAllManufacturers = async (req, res) => {
 
  const createManufacturer = async (req, res) => {
   const manufacturer = new Manufacturer({
-    name: req.body.name,
+    Name: req.body.Name,
     country: req.body.country,
     founded: req.body.founded,
   });
@@ -48,7 +48,7 @@ const getAllManufacturers = async (req, res) => {
       return res.status(404).json({ message: 'Manufacturer not found' });
     }
     
-    manufacturer.name = req.body.name;
+    manufacturer.Name = req.body.Name;
     manufacturer.country = req.body.country;
     manufacturer.founded = req.body.founded;
 

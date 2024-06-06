@@ -1,16 +1,20 @@
 document.addEventListener('DOMContentLoaded', () => {
     const searchButton = document.getElementById('searchButton');
+    const searchByManufacturerButton = document.getElementById('searchByManufacturerButton');
     const resetButton = document.getElementById('resetButton');
     const searchInput = document.getElementById('searchInput');
+    const manufacturerInput = document.getElementById('manufacturerInput');
     const firearmsList = document.getElementById('firearms-list');
 
-    const fetchFirearms = async (searchTerm = '') => {
+    const fetchFirearms = async (searchTerm = '', manufacturerName = '') => {
         try {
             let response;
             if (searchTerm) {
-                response = await axios.get(`http://localhost:3001/firearms?name=${encodeURIComponent(searchTerm)}`);
+                response = await axios.get(`http://localhost:3990/firearms?name=${encodeURIComponent(searchTerm)}`);
+            } else if (manufacturerName) {
+                response = await axios.get(`http://localhost:3990/firearms?manufacturer=${encodeURIComponent(manufacturerName)}`);
             } else {
-                response = await axios.get(`http://localhost:3001/firearms`);
+                response = await axios.get(`http://localhost:3990/firearms`);
             }
 
             firearmsList.innerHTML = '';
@@ -20,8 +24,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 firearmItem.innerHTML = `
                     <h3>Name: ${firearm.name}</h3>
                     <p>Caliber: ${firearm.caliber}</p>
+                    <p>manufacturer: ${firearm.Manufacturer}</P>
                     <p>Manufacturer: ${firearm.manufacturerId}</p>
-                    <p>Ownership:${firearm.Ownership}</p>
+                    <p>Ownership: ${firearm.Ownership}</p>
                     <p>History: ${firearm.history}</p>
                     <img src="${firearm.Image}"/>
                 `;
@@ -37,11 +42,17 @@ document.addEventListener('DOMContentLoaded', () => {
         fetchFirearms(searchTerm);
     });
 
+    searchByManufacturerButton.addEventListener('click', () => {
+        const manufacturerName = manufacturerInput.value.trim();
+        fetchFirearms('', manufacturerName);
+    });
+
     resetButton.addEventListener('click', () => {
         searchInput.value = '';
+        manufacturerInput.value = '';
         fetchFirearms();
     });
 
-    
+   
     fetchFirearms();
 });

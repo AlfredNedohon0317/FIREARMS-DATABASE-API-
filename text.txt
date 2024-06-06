@@ -3,7 +3,7 @@ FirearmAPI/
 ├── controllers/
 │   ├── firearmController.js
 │   ├── manufacturerController.js
-│   └── historyController.js
+│   
 │
 ├── db/
 │   └── index.js
@@ -11,17 +11,17 @@ FirearmAPI/
 ├── models/
 │   ├── firearm.js
 │   ├── manufacturer.js
-│   └── history.js
+│ 
 │
 ├── routes/
 │   ├── firearms.js
 │   ├── manufacturers.js
-│   └── history.js
+│   
 │
 ├── seed/
 │   ├── firearms.js
 │   ├── manufacturers.js
-│   └── history.js
+│   
 │
 ├── server.js
 └── README.md
@@ -55,3 +55,16 @@ for (const firearmObject of firearmObjectArray) {
 
 
 const manufObject = manufacturerObjectArray.find(obj => obj._id.toString() === firearmObject.manufacturerId);
+
+
+
+
+
+
+            name: 
+            caliber:"",
+            Manufacturer: "",
+            manufacturerId: ``,
+            history: "",
+            Ownership: "",
+            Image: "",

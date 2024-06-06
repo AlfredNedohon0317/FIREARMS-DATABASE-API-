@@ -54,7 +54,7 @@ const app = express();
 
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3990;
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });
