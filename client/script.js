@@ -10,11 +10,11 @@ document.addEventListener('DOMContentLoaded', () => {
         try {
             let response;
             if (searchTerm) {
-                response = await axios.get(`http://localhost:3990/firearms?name=${encodeURIComponent(searchTerm)}`);
+                response = await axios.get(`http://localhost:3550/firearms?name=${encodeURIComponent(searchTerm)}`);
             } else if (manufacturerName) {
-                response = await axios.get(`http://localhost:3990/firearms?manufacturer=${encodeURIComponent(manufacturerName)}`);
+                response = await axios.get(`http://localhost:3550/firearms?manufacturer=${encodeURIComponent(manufacturerName)}`);
             } else {
-                response = await axios.get(`http://localhost:3990/firearms`);
+                response = await axios.get(`http://localhost:3550/firearms`);
             }
 
             firearmsList.innerHTML = '';
