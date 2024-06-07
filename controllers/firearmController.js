@@ -104,8 +104,6 @@ const getFirearmsByManufacturer = async (req, res) => {
 }; 
 
 
-
-
 module.exports = { 
   getAllFirearms,
   getFirearmById,

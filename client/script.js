@@ -8,9 +8,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const fetchFirearms = async (searchTerm = '', manufacturerName = '') => {
         try {
+            console.log('Search Term:', searchTerm);
+            console.log('Manufacturer Name:', manufacturerName);
+
             let response;
             if (searchTerm) {
-                response = await axios.get(`http://localhost:3550/firearms?name=${encodeURIComponent(searchTerm)}`);
+                response = await axios.get(`http://localhost:3550/firearms?Name=${encodeURIComponent(searchTerm)}`);
             } else if (manufacturerName) {
                 response = await axios.get(`http://localhost:3550/firearms?manufacturer=${encodeURIComponent(manufacturerName)}`);
             } else {
@@ -22,10 +25,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 const firearmItem = document.createElement('li');
                 firearmItem.classList.add('firearmItem');
                 firearmItem.innerHTML = `
-                    <h3>Name: ${firearm.name}</h3>
+                    <h3>Name: ${firearm.Name}</h3>
                     <p>Caliber: ${firearm.caliber}</p>
-                    <p>manufacturer: ${firearm.Manufacturer}</P>
-                    <p>Manufacturer: ${firearm.manufacturerId}</p>
+                    <p>Manufacturer: ${firearm.Manufacturer}</p>
+                    <p>Manufacturer ID: ${firearm.manufacturerId}</p>
                     <p>Ownership: ${firearm.Ownership}</p>
                     <p>History: ${firearm.history}</p>
                     <img src="${firearm.Image}"/>
